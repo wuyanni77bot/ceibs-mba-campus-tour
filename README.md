@@ -1,3 +1,10 @@
+# CEIBS MBA Campus Tour — GitHub Pages v5
+
+This version uses the latest named landmark photos supplied by the MBA team. Key tour photos are also embedded in `app.js` so they remain visible even if individual image assets fail to load after a GitHub Pages update.
+
+## Deploy
+Upload all files in this folder to the root of the existing GitHub Pages repository and commit the changes. No new repository or Pages setup is required.
+
 # CEIBS MBA Campus Tour Guide
 
 A lightweight mobile-first PWA for CEIBS MBA student volunteers.

@@ -404,3 +404,26 @@ h1 {
   .brandbar { position:relative; }
   .bottom-nav { bottom:18px; }
 }
+
+.route-map-wrap {
+  margin: 4px 0 16px;
+  background: #fff;
+  border: 1px solid var(--line-strong);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.route-map-wrap img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  background: #fff;
+}
+.route-map-wrap span {
+  display: block;
+  padding: 9px 12px 11px;
+  color: #746e6c;
+  font-size: 12px;
+  font-weight: 700;
+}
