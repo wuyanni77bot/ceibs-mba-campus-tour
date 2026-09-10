@@ -1,49 +1,34 @@
-# CEIBS MBA Campus Tour — GitHub Pages v5
+# CEIBS MBA Campus Tour — GitHub Pages v7
 
-This version uses the latest named landmark photos supplied by the MBA team. Key tour photos are also embedded in `app.js` so they remain visible even if individual image assets fail to load after a GitHub Pages update.
+Mobile-first PWA for CEIBS MBA student volunteers, with separate 30-minute Essential and 45-minute Full Tour modes.
 
-## Deploy
-Upload all files in this folder to the root of the existing GitHub Pages repository and commit the changes. No new repository or Pages setup is required.
+## v7 update
+- Renamed Stop 2 to **Academic Building & Auditorium / Classroom**.
+- Replaced the Academic Building and Auditorium visuals with the latest supplied images.
+- Added an **MBA Student Residence** room image to the Residence stop.
+- Landmark images remain embedded in `app.js` as a fallback so they continue to display reliably after GitHub Pages updates.
+- Service worker cache bumped to `ceibs-campus-tour-v7` so installed phones refresh to the new version.
 
-# CEIBS MBA Campus Tour Guide
-
-A lightweight mobile-first PWA for CEIBS MBA student volunteers.
+## Deploy to the existing GitHub Pages site
+1. Unzip this package.
+2. Open the existing GitHub repository.
+3. Choose **Add file → Upload files**.
+4. Upload all files and the full `assets` folder to the repository root, replacing files with the same names.
+5. Commit the changes.
+6. No new GitHub Pages setup is required if the existing site is already published from `main` → `/ (root)`.
+7. Allow a few minutes for GitHub Pages to redeploy, then refresh the site on your phone.
 
 ## Tour modes
 - 30-minute Essential Tour
 - 45-minute Full Tour
 
-Both use the same eight-stop route. The 45-minute route adds Explore More content.
-
-## Deploy to GitHub Pages
-1. Create a new GitHub repository, e.g. `ceibs-campus-tour`.
-2. Upload all files in this folder to the repository root.
-3. In GitHub: **Settings → Pages**.
-4. Under **Build and deployment**, choose **Deploy from a branch**.
-5. Select branch `main` and folder `/ (root)`, then Save.
-6. Open the published GitHub Pages URL on a phone.
-7. Add it to the phone home screen.
+Both use the same nine-stop route. The 45-minute route adds Explore More content.
 
 ## iPhone installation
-Open the site in Safari → Share → **Add to Home Screen**.
+Open the published site in Safari → Share → **Add to Home Screen**.
 
 ## Android installation
 Open in Chrome → menu → **Install app** / **Add to Home screen**.
 
-## VI colours used
-- CEIBS Red: `#bf0008`
-- CEIBS Black: `#221815`
-- MBA Grey: `#dcdddd`
-- Supporting Grey: `#727172`
-
-## Production note
-The prototype contains a raster crop of the CEIBS MBA programme mark from the supplied 2026 VI manual for layout testing. Before broad production use, replace `assets/ceibs-mba-logo.png` with the official high-resolution CEIBS MBA logo asset from the brand team while keeping the same filename.
-
 ## Updating content
-Edit the `stops` array near the top of `app.js`. Each stop has:
-- `title`
-- `story`
-- `essential` (shown in both tours)
-- `explore` (shown only in the 45-minute tour)
-
-Update the service-worker cache version in `sw.js` after major changes, e.g. `ceibs-campus-tour-v2`, so installed phones refresh promptly.
+Tour content and image references are in the `stops` array in `app.js`. After major updates, also bump the cache name in `sw.js` so installed phones refresh promptly.
