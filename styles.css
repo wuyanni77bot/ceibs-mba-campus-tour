@@ -53,18 +53,20 @@ a { color: inherit; }
 }
 .wordmark {
   display: inline-flex;
-  align-items: baseline;
+  align-items: center;
   gap: 8px;
   color: var(--ink-strong);
   font-weight: 800;
   letter-spacing: -.02em;
 }
-.brand-main { font-size: 30px; line-height: 1; }
-.brand-divider { color: #8d8684; font-size: 22px; line-height: 1; }
+.brand-main { font-size: 30px; line-height: 1; display:block; }
+.brand-divider { color: #8d8684; font-size: 24px; line-height: 1; display:block; }
 .brand-sub {
   color: var(--ceibs-red);
-  font-size: 24px;
+  font-size: 30px;
   line-height: 1;
+  display:block;
+  transform: translateY(-1px);
 }
 .brandtag {
   text-align: right;
