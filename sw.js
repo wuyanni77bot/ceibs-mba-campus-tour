@@ -1,4 +1,4 @@
-const CACHE = 'ceibs-campus-tour-v9';
+const CACHE = 'ceibs-campus-tour-v10';
 const ASSETS = [
   './', './index.html', './styles.css', './app.js', './manifest.webmanifest',
   './assets/icon-192.png', './assets/icon-512.png', './assets/apple-touch-icon.png', './assets/ceibs-mba-logo-vi.png', './assets/ceibs-symbol.png',
