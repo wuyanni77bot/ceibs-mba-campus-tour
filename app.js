@@ -61,8 +61,7 @@ const stops = [
     title: "Information Center / Library",
     story: "Knowledge, China and the wider world",
     photos: [
-      { src: "assets/user-library.jpg", alt: "CEIBS Information Center and Library exterior", caption: "Information Center / Library" },
-      { src: "assets/library-lounge.jpg", alt: "Interior study and discussion space at CEIBS", caption: "Study and discussion space" }
+      { src: "assets/user-library.jpg", alt: "CEIBS Information Center and Library exterior", caption: "Information Center / Library" }
     ],
     essential: `
       <section class="guide-card"><h3>Essential talking points</h3>
@@ -111,7 +110,8 @@ const stops = [
     title: "InnoLab",
     story: "Innovation, entrepreneurship and experimentation",
     photos: [
-      { src: "assets/innolab.jpg", alt: "InnoLab interior at CEIBS", caption: "InnoLab" }
+      { src: "assets/innolab.jpg", alt: "InnoLab interior at CEIBS", caption: "InnoLab" },
+      { src: "assets/library-lounge.jpg", alt: "InnoLab discussion and collaboration space", caption: "Discussion and collaboration space" }
     ],
     essential: `
       <section class="guide-card"><h3>Essential talking points</h3>
