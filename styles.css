@@ -51,22 +51,17 @@ a { color: inherit; }
   border-bottom: 1px solid var(--line);
   backdrop-filter: blur(12px);
 }
-.wordmark {
-  display: inline-flex;
+.brandlogo-wrap {
+  display: flex;
   align-items: center;
-  gap: 8px;
-  color: var(--ink-strong);
-  font-weight: 800;
-  letter-spacing: -.02em;
+  min-width: 0;
 }
-.brand-main { font-size: 30px; line-height: 1; display:inline-flex; align-items:center; }
-.brand-divider { color: #8d8684; font-size: 25px; line-height: 1; display:inline-flex; align-items:center; }
-.brand-sub {
-  color: var(--ceibs-red);
-  font-size: 30px;
-  line-height: 1;
-  display:inline-flex;
-  align-items:center;
+.brandlogo {
+  display: block;
+  height: 42px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
 .brandtag {
   text-align: right;

@@ -186,7 +186,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 function brandbar() {
-  return `<header class="brandbar"><div class="wordmark"><span class="brand-main">CEIBS</span><span class="brand-divider">|</span><span class="brand-sub">MBA</span></div><div class="brandtag"><strong>中国深度 全球广度</strong>China Depth Global Breadth</div></header>`;
+  return `<header class="brandbar"><div class="brandlogo-wrap"><img class="brandlogo" src="assets/ceibs-mba-logo-vi.png" alt="CEIBS MBA"></div><div class="brandtag"><strong>中国深度 全球广度</strong>China Depth Global Breadth</div></header>`;
 }
 
 function renderGallery(stop) {
